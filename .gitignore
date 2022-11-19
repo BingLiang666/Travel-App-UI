@@ -1,0 +1,10 @@
+# Ignore mac system files
+.DS_store
+.idea/
+
+#Ignore node_modules folder
+node_modules/
+
+# Ignore logs
+logs
+*.log
