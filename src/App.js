@@ -4,6 +4,9 @@ import Single from "./pages/single/Single";
 import Create from "./pages/create/Create";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+/**
+ * The entry point of the ui
+ */
 function App() {
   return (
     <Router>

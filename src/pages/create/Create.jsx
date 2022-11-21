@@ -2,6 +2,9 @@ import "./create.css";
 import { useState } from "react";
 import axios from "axios";
 
+/**
+ * The record create page
+ */
 export default function Create() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -9,6 +12,8 @@ export default function Create() {
   const [end_date, setEndDate] = useState("");
   const [destination, setDestination] = useState("");
 
+  // handle submit of the creating form by applying post method with the axios
+  // to create a new travel record
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newRecord = {
@@ -25,6 +30,7 @@ export default function Create() {
     } catch (err) {}
   };
 
+  // the create form and associated action such as the handleSummit
   return (
     <div className="create">
       <img

@@ -1,6 +1,10 @@
 import "./record.css";
 import { Link } from "react-router-dom";
 
+/**
+ * The record component that displays each record
+ * @param {*} param0 the record prop
+ */
 export default function Record({record}) {
   return (
     <div className="record">

@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
+/**
+ * The navbar of the whole web application
+ */
 export default function Navbar() {
   return (
     <div className="nav">

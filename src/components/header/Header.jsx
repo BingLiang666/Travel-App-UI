@@ -1,5 +1,8 @@
 import "./header.css";
 
+/**
+ * The header of the home page
+ */
 export default function Header() {
   return (
     <div className="header">

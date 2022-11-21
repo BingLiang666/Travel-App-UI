@@ -5,6 +5,9 @@ import Records from "../../components/records/Records";
 import SideBar from "../../components/sideBar/SideBar";
 import "./home.css";
 
+/**
+ * The home page
+ */
 export default function Home() {
   const [records, setRecords] = useState([]);
   // inlcude an empty array as the dependency to indicate that we want to fetch this data

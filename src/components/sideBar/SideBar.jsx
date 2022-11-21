@@ -1,5 +1,8 @@
 import "./sideBar.css";
 
+/**
+ * Side bar contents and layouts
+ */
 export default function SideBar() {
   return (
     <div className="sidebar">
