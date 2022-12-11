@@ -25,7 +25,7 @@ export default function SingleRecord() {
       const res = await axios.get("/record/" + path);
 
       console.log("path is" + path);
-      
+
       setRecord(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -51,6 +51,7 @@ export default function SingleRecord() {
         title,
         desc,
       });
+      window.location.reload();
     } catch (err) {}
   };
 
@@ -62,16 +63,44 @@ export default function SingleRecord() {
           src={require("../../imgs/dino-reichmuth-A5rCN8626Ck-unsplash.jpg")}
           alt=""
         />
-        <h1 className="singleRecordtTitle">
+        {/* <h1 className="singleRecordTitle">
           {record.title}
           <div className="singleRecordEdit">
             <i className="singleRecordIcon far fa-edit"></i>
             <i className="singleRecordIcon far fa-trash-alt"></i>
           </div>
-        </h1>
-        <p className="singleRecordDesc">
-          {Record.description}
-        </p>
+        </h1> */}
+        <p className="singleRecordDesc">{Record.description}</p>
+        {updateMode ? (
+          <input
+            type="text"
+            value={title}
+            className="singleRecordTitleInput"
+            autoFocus
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        ) : (
+          <h1 className="singleRecordTitle">
+            {title}
+
+            <div className="singleRecordEdit">
+              <i
+                className="singleRecordIcon far fa-edit"
+                onClick={() => setUpdateMode(true)}
+              ></i>
+              <i
+                className="singleRecordIcon far fa-trash-alt"
+                onClick={handleDelete}
+              ></i>
+            </div>
+          </h1>
+        )}
+
+        {updateMode && (
+          <button className="singleRecordButton" onClick={handleUpdate}>
+            Update
+          </button>
+        )}
       </div>
     </div>
   );
