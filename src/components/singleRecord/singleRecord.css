@@ -20,6 +20,20 @@
     font-size: 28px;
     font-family: "Lora", sans-serif;
   }
+
+  .singleRecordTitleInput {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .singleRecordTitleInput:focus {
+    outline: none;
+  }
   
   .singleRecordEdit {
     float: right;
@@ -57,4 +71,36 @@
     margin-left: 20px;
     font-size: 30px;
     font-weight: 600;
+  }
+
+  .singleRecordDescInput:focus {
+    outline: none;
+  }
+
+  .singleRecordDestination {
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .singleRecordDestination::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .singleRecordDestinationInput:focus {
+    outline: none;
+  }
+
+  .singleRecordButton {
+    width: 100px;
+    border: none;
+    background-color: grey;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
   }

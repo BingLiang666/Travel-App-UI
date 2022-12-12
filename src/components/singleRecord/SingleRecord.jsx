@@ -16,7 +16,11 @@ export default function SingleRecord() {
   // const PF = "http://localhost:5000/images/";
   // const { user } = useContext(Context);
   const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [description, setDescription] = useState("");
+  const [start_date, setStartDate] = useState("");
+  const [end_date, setEndDate] = useState("");
+  const [destination, setDestination] = useState("");
+
   const [updateMode, setUpdateMode] = useState(false);
 
   // handle the get request on the record
@@ -28,7 +32,10 @@ export default function SingleRecord() {
 
       setRecord(res.data);
       setTitle(res.data.title);
-      setDesc(res.data.desc);
+      setDescription(res.data.description);
+      setEndDate(res.data.end_date);
+      setStartDate(res.data.start_date);
+      setDestination(res.data.destination);
     };
     getRecord();
   }, [path]);
@@ -37,7 +44,6 @@ export default function SingleRecord() {
   const handleDelete = async () => {
     try {
       await axios.delete(`/record/${record.id}`, {
-        // data: { username: user.username },
       });
       window.location.replace("/");
     } catch (err) {}
@@ -45,13 +51,25 @@ export default function SingleRecord() {
 
   // handle the update request on a record
   const handleUpdate = async () => {
+    console.log(`/record/${record.id}`);
+    const updatedRecord = {
+      title,
+      destination,
+      start_date,
+      end_date,
+      description,
+    };
     try {
-      await axios.put(`/record/${record.id}`, {
-        // username: user.username,
-        title,
-        desc,
-      });
-      window.location.reload();
+      // await axios.put(`/record/${record.id}`, {
+      //   title,
+      //   destination,
+      //   start_date,
+      //   end_date,
+      //   description
+      // });
+      await axios.put(`/record/${record.id}`, updatedRecord);
+      
+      setUpdateMode(false);
     } catch (err) {}
   };
 
@@ -70,7 +88,7 @@ export default function SingleRecord() {
             <i className="singleRecordIcon far fa-trash-alt"></i>
           </div>
         </h1> */}
-        <p className="singleRecordDesc">{Record.description}</p>
+        {/* <p className="singleRecordDesc">{Record.description}</p> */}
         {updateMode ? (
           <input
             type="text"
@@ -94,6 +112,56 @@ export default function SingleRecord() {
               ></i>
             </div>
           </h1>
+        )}
+
+        {updateMode ? (
+          <textarea
+            className="singleRecordDescInput"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        ) : (
+          <p className="singleRecordDesc">{description}</p>
+        )}
+{/* 
+        {updateMode ? (
+          <textarea
+            className="singleRecordTitleInput"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        ) : (
+          <p className="singleRecordTitle">{title}</p>
+        )} */}
+
+        {updateMode ? (
+          <textarea
+            className="singleRecordDestinationInput"
+            value={destination}
+            onChange={(e) => setDestination(e.target.value)}
+          />
+        ) : (
+          <p className="singleRecordDestination">{destination}</p>
+        )}
+
+        {updateMode ? (
+          <input
+            className="singleRecordStartDateInput"
+            value={start_date}
+            onChange={(e) => setStartDate(e.target.value)}
+          />
+        ) : (
+          <p className="singleRecordStartDate">{start_date}</p>
+        )}
+
+        {updateMode ? (
+          <input
+            className="singleRecordEndDateInput"
+            value={end_date}
+            onChange={(e) => setEndDate(e.target.value)}
+          />
+        ) : (
+          <p className="singleRecordEndDate">{end_date}</p>
         )}
 
         {updateMode && (

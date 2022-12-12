@@ -26,7 +26,7 @@ export default function Create() {
     try {
       const res = await axios.post("/record", newRecord);
       window.location.replace("/record/" + res.data.id);
-      console.log("i am here");
+      console.log("Creating a new record.");
     } catch (err) {}
   };
 
