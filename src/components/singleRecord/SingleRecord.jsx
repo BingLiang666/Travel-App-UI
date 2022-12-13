@@ -43,8 +43,7 @@ export default function SingleRecord() {
   // handle the delete request on a record
   const handleDelete = async () => {
     try {
-      await axios.delete(`/record/${record.id}`, {
-      });
+      await axios.delete(`/record/${record.id}`, {});
       window.location.replace("/");
     } catch (err) {}
   };
@@ -60,15 +59,7 @@ export default function SingleRecord() {
       description,
     };
     try {
-      // await axios.put(`/record/${record.id}`, {
-      //   title,
-      //   destination,
-      //   start_date,
-      //   end_date,
-      //   description
-      // });
       await axios.put(`/record/${record.id}`, updatedRecord);
-      
       setUpdateMode(false);
     } catch (err) {}
   };
@@ -81,14 +72,6 @@ export default function SingleRecord() {
           src={require("../../imgs/dino-reichmuth-A5rCN8626Ck-unsplash.jpg")}
           alt=""
         />
-        {/* <h1 className="singleRecordTitle">
-          {record.title}
-          <div className="singleRecordEdit">
-            <i className="singleRecordIcon far fa-edit"></i>
-            <i className="singleRecordIcon far fa-trash-alt"></i>
-          </div>
-        </h1> */}
-        {/* <p className="singleRecordDesc">{Record.description}</p> */}
         {updateMode ? (
           <input
             type="text"
@@ -100,7 +83,6 @@ export default function SingleRecord() {
         ) : (
           <h1 className="singleRecordTitle">
             {title}
-
             <div className="singleRecordEdit">
               <i
                 className="singleRecordIcon far fa-edit"
@@ -115,53 +97,55 @@ export default function SingleRecord() {
         )}
 
         {updateMode ? (
-          <textarea
-            className="singleRecordDescInput"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
+          <div>
+            <p className="singleRecordFieldHeader">Destination: </p>
+            <input
+              className="singleRecordDestinationInput"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+            />
+          </div>
         ) : (
-          <p className="singleRecordDesc">{description}</p>
-        )}
-{/* 
-        {updateMode ? (
-          <textarea
-            className="singleRecordTitleInput"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        ) : (
-          <p className="singleRecordTitle">{title}</p>
-        )} */}
-
-        {updateMode ? (
-          <textarea
-            className="singleRecordDestinationInput"
-            value={destination}
-            onChange={(e) => setDestination(e.target.value)}
-          />
-        ) : (
-          <p className="singleRecordDestination">{destination}</p>
+          <p className="singleRecordDestination">Destination: {destination}</p>
         )}
 
         {updateMode ? (
-          <input
-            className="singleRecordStartDateInput"
-            value={start_date}
-            onChange={(e) => setStartDate(e.target.value)}
-          />
+          <div>
+            <p className="singleRecordFieldHeader">Start Date: </p>
+            <input
+              className="singleRecordStartDateInput"
+              value={start_date}
+              onChange={(e) => setStartDate(e.target.value)}
+            />
+          </div>
         ) : (
-          <p className="singleRecordStartDate">{start_date}</p>
+          <p className="singleRecordStartDate">Start Date: {start_date}</p>
         )}
 
         {updateMode ? (
-          <input
-            className="singleRecordEndDateInput"
-            value={end_date}
-            onChange={(e) => setEndDate(e.target.value)}
-          />
+          <div>
+            <p className="singleRecordFieldHeader">End Date: </p>
+            <input
+              className="singleRecordEndDateInput"
+              value={end_date}
+              onChange={(e) => setEndDate(e.target.value)}
+            />
+          </div>
         ) : (
-          <p className="singleRecordEndDate">{end_date}</p>
+          <p className="singleRecordEndDate">End Date: {end_date}</p>
+        )}
+
+        {updateMode ? (
+          <div>
+            <p className="singleRecordFieldHeader">Description: </p>
+            <textarea
+              className="singleRecordDescInput"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
+        ) : (
+          <p className="singleRecordDesc">Description: {description}</p>
         )}
 
         {updateMode && (

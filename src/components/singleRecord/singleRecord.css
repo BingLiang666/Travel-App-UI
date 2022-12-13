@@ -73,8 +73,28 @@
     font-weight: 600;
   }
 
+  .singleRecordDescHeader {
+    font-family: "Varela Round";
+    font-size: 20px;
+  }
+
+  .singleRecordDescInput {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
   .singleRecordDescInput:focus {
     outline: none;
+  }
+
+  .singleRecordDestinationHeader {
+    font-family: "Varela Round";
+    font-size: 20px;
   }
 
   .singleRecordDestination {
@@ -89,12 +109,84 @@
     font-weight: 600;
   }
 
+  .singleRecordDestinationInput {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
   .singleRecordDestinationInput:focus {
     outline: none;
   }
 
+  .singleRecordEndDateHeader {
+    font-family: "Varela Round";
+    font-size: 20px;
+  }
+
+  .singleRecordEndDate {
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .singleRecordEndDate::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .singleRecordEndDateInput {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .singleRecordEndDateInput:focus {
+    outline: none;
+  }
+
+  .singleRecordStartDateHeader {
+    font-family: "Varela Round";
+    font-size: 20px;
+  }
+
+  .singleRecordStartDate {
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .singleRecordStartDate::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .singleRecordStartDateInput {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .singleRecordStartDateInput:focus {
+    outline: none;
+  }
+
   .singleRecordButton {
-    width: 100px;
+    width: 125px;
     border: none;
     background-color: grey;
     padding: 5px;

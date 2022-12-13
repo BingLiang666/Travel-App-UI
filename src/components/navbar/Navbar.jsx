@@ -20,11 +20,11 @@ export default function Navbar() {
               HOME
             </Link>
           </li>
-          <li className="navListItem">
+          {/* <li className="navListItem">
             <Link className="link" to="/" style={{}}>
               ABOUT
             </Link>
-          </li>
+          </li> */}
           <li className="navListItem">
             <Link className="link" to="/records" style={{}}>
               RECORDS
@@ -43,7 +43,7 @@ export default function Navbar() {
           src={require("../../imgs/alex-azabache-V83v-MYB_Z8-unsplash.jpg")}
           alt="main_menu"
         />
-        <i className="navSearchIcon fa-solid fa-magnifying-glass"></i>
+        {/* <i className="navSearchIcon fa-solid fa-magnifying-glass"></i> */}
       </div>
     </div>
   );
