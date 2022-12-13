@@ -49,22 +49,20 @@ export default function Create() {
             placeholder="Title"
             type="text"
             autoFocus={true}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
 
-        {/* Change these */}
         <div className="createInfo">
-          <label>Traveler(s)</label>
-          {/* <input type="text" placeholder="Traveler(s) Name" name="name" /> */}
-          <label>Title</label>
+          {/* <label>Travel Title</label>
           <input
             type="text"
-            placeholder="Traveler(s) Name"
+            placeholder="Title"
             className="createInput"
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <br />
+          <br /> */}
           <label>Travel Start Date</label>
           <input
             type="text"
@@ -92,7 +90,7 @@ export default function Create() {
         <div className="createFormGroup">
           <textarea
             className="createInput createText"
-            placeholder="Enter your travel description here..."
+            placeholder="Enter the travel description here..."
             type="text"
             onChange={(e) => setDescription(e.target.value)}
           />
