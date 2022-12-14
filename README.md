@@ -32,4 +32,4 @@ Step5. You can stay in [http://localhost:3000](http://localhost:3000) to manage 
 
 ### Navigation Bar
 
-![Navigation Bar] (./src/imgs/navbar.png?raw=true "Navigation Bar")
+![Navigation Bar](./src/imgs/navbar.png?raw=true "Navigation Bar")
