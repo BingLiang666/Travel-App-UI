@@ -30,22 +30,22 @@ Step5. You can stay in [http://localhost:3000](http://localhost:3000) to manage 
 
 ## How to use
 
-* Navigation Bar
+* ### Navigation Bar
 
 ![Navigation Bar](./src/imgs/navbar.png?raw=true "Navigation Bar")
 
-* Show a list of records in the database
+* ###  Show a list of records in the database
 
 ![Show records](./src/imgs/list_of_records.png?raw=true "Show records")
 
-* Create a new record
+* ###  Create a new record
 
 ![Create new record](./src/imgs/create_new_record.png?raw=true "Create new record")
 
-* View/Edit/Delete a single record
+* ###  View/Edit/Delete a single record
 
-![Single record](./src/imgs/create_new_record.png?raw=true "Single record")
+![Single record](./src/imgs/single_record.png?raw=true "Single record")
 
-* Edit a record
+* ###  Edit a record
 
-![Edit record](./src/imgs/create_new_record.png?raw=true "Edit record")
+![Edit record](./src/imgs/update_a_record.png?raw=true "Edit record")
