@@ -37,7 +37,7 @@ export default function Home() {
       <Header />
       <div className="home">
         <Records records={records} />
-        <SideBar />
+        {/* <SideBar /> */}
       </div>
     </>
   );

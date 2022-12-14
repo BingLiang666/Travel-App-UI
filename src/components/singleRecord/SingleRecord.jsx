@@ -2,9 +2,8 @@ import { useLocation } from "react-router";
 // import { Link } from "react-router-dom";
 // import { Context } from "../../context/Context";
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./singleRecord.css";
-import Record from "../record/Record";
 
 /**
  * Single record component that defines the layout and actions accociated with a single record

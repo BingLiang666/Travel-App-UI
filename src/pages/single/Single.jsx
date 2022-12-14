@@ -9,7 +9,7 @@ export default function Single() {
   return (
     <div className="single">
       <SingleRecord />
-      <SideBar />
+      {/* <SideBar /> */}
     </div>
   );
 }

@@ -27,3 +27,9 @@ yarn start  (Start this project and open it in the current browser at http://loc
 ```
 
 Step5. You can stay in [http://localhost:3000](http://localhost:3000) to manage the travel records.
+
+## How to use
+
+### Navigation Bar
+
+![Navigation Bar] (./src/imgs/navbar.png?raw=true "Navigation Bar")
