@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Travel Records Management Platform (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This repo contains frontend UI for the management of travel records.
 
-## Available Scripts
+We sometimes forget those wonderful travels we had with our families, friends, or just ourselves. Does it sound nice if we can have a tool that helps us 
+manage all the travel records which we can edit and review at any time or even share with others?
 
-In the project directory, you can run:
+“Travel Records Management Platform” is such a tool built with web application techniques, i.e., FastAPI and SQLite, where users can manage their travel 
+records easily. They can create new travel records or update the existing records within only a few minutes, and retrieve those records with just a few 
+clicks.
 
-### `npm start`
+## Load and Run (in Terminal)
+Step1. Clone this repo to the local machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Step2. Once this repo has been cloned successfully, open terminal and go into the direcory of this repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Step3. Start the backend server of this poject. Refer to xxx for more infomation of how to start the server.
 
-### `npm test`
+Step4. Run the following command inside the "side-project-BingLiang666" folder :
+```
+yarn install  (Intsall all the required packages with the required version of this project)
+```
+and then,
+```
+yarn start  (Start this project and open it in the current browser at http://localhost:3000/)
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Step5. You can stay in [http://localhost:3000](http://localhost:3000) to manage the travel records.
